@@ -1,0 +1,60 @@
+<!--
+  # <datalist>
+    
+    - Lista de valores como sugestão a uma tag <input>. Logo, não são obrigatórios
+    - Valores sugestivos e não obrigatórios
+    - Usuários poderão selecionar um dos valores, ou colocar um valor 
+    diferente da sugestão.
+    
+    <datalis id="fruitsdata">
+        <option>apple</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+    
+    #list
+
+    - Recebe como valor o id de um <datalist> residente no 
+    mesmo documento.
+
+    # Tipos de input suportados
+
+    -text, search, url, tel, email, datem month, week, time,
+    datetime-local, number, range e color.
+
+    *Valores de datalist que não são compatíveis com o tipo do 
+    <input> não serão apresentados.
+
+
+    #Tipos de input não suportados (conforme especificação)
+
+    -hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+    #User Agent
+
+    Verificar compatibilidade com o browser https://caniuse.com
+
+    Placeholder: O campo "Placeholder" é utilizado para indicar ao navegador o texto que deverá
+    aparecer escrito no campo do formulário, na maioria das vezes utilizado para indicar 
+    ao usuário como deve ser preenchido aquele campo em específico
+    ou a função daquele campo de formulário.
+-->
+
+<input type="text" list="fruitsdata" placeholder="Escolha uma Fruta"/>
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+</datalist>
+
+<input type="color" list="colorsdata"/>
