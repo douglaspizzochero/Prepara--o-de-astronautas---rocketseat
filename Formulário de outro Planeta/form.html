@@ -1,0 +1,34 @@
+<!--
+    <form>
+    
+    - Elemento que definirá um formulário 
+    - É um container estilo <section> <footer>
+    
+    Atributos básicos
+    - action
+    - method
+
+-->
+
+<form action=""></form> <!-- action siginifica pra onde o formulário vai ser submetido 
+ou seja, todos os dados entre os forms irão pra algum lugar, caso deixe vazio os dados ficarão na
+mesma página -->
+<form action="" method="GET"></form> <!-- O método sempre irá definir dois verbos, por enquanto POST e GET,
+GET é um verbo HTTP, que pegará os dados e enviará para o endereço do action com verbo
+então a gente faz um verbo, "envia no método de GET", logo o verbo HTTP serve para ajudar a gente a explicar
+como os dados estão trafegando. 
+Imaginemos que estamos na página:
+http://minhapagina.com.br/ com o action vazio significa que eu vou enviar os dados pra mesma página que estou e
+então ele pegará e fazer http://minhapagina.com.br/?name=Douglas&email=douglaspizzochero@hotmail.com (botando um input de name)
+-->
+<form action="" method="POST"></form> <!--Já nesse método os dados ficarão escondidos, não aparecem na URL, mas são recebidos tbm no "action"
+só que são recebidos de outra forma, mais escondida. Usamos esse método para criarmos uma outra coisa
+
+Caso eu não preencha nenhum dos dados ele entenderá da seguinte maneira:
+<form action="" method="">
+"conteúdo"
+</form> A informação ficará na página e o methodo, por padrão, será GET
+NÃO PODEMOS CRIAR UM FORM DENTRO DE OUTRO FORM. 
+-->
+
+
