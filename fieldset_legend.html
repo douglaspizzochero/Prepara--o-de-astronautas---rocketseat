@@ -1,0 +1,46 @@
+<!--
+    <fieldset>
+    - Serve para fazer um agrupamento de campos que tem o mesmo propósito
+    - O objetivo é deixar seu HTML mais semântico e com maior acessibilidade
+
+    Atributos especiais
+    - disable
+        - desabilita todos os elementos internos
+        - não  serão enviados ao sibmeter o formulário
+    - form
+        - O id de um formulário ao qual esse fieldet pertence
+        - Não precisa estar dentro do formulário
+    - name 
+        - nome do grupo
+    
+    <legend>
+        - nome do agrupamento
+        - primeiro elemento dentro do fieldset
+    
+-->
+<form id="contato" action="">
+    <button>Enviar</button>
+    <!--<fieldset disabled>
+        <legend>Contato</legend>
+        <label for="">Nome:</label>
+        <label>  se você utilizar a Tag <label> juntamente com o parâmetro for, 
+            poderá fazer um vínculo entre um rótulo e um campo do formulário de forma que, 
+            ao clicar no rótulo, você terá o mesmo resultado que se clicasse no campo vinculado.
+            Para que o parâmetro for da Tag <label> funcione corretamente,
+             devemos também definir o parâmetro id do controle relacionado.
+        <input type="text">
+    </fieldset> -->
+</form>
+
+<!--
+    Caso, por algum motivo, eu não consiga colocar esse fieldset, por motivo de
+    layout eu não consiga deixá-lo dentro do formulário, dentro do formulário 
+    e sim em outra parte da página eu farei. Lembre-se de comparar as duas fotos
+-->
+<fieldset form="contato" name="inputs-contact">
+    <legend>Contato</legend>
+    <label for="">Nome:</label>
+
+    <input type="text">
+</fieldset>
+
