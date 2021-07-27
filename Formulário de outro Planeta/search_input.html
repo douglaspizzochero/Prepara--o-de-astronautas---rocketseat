@@ -1,0 +1,44 @@
+<!--
+
+<input type="seacrh"/>
+
+- Para campos de busca
+- É igual ao campo do tipo "text" mas poderá ser 
+um pouco diferente dependendo do user agent.
+
+# Atributos
+- list/<datalist>
+- pattern
+- aria-label
+
+<datalist id="searchterms">
+    <option> Mac </option>
+    <option> Win </option>
+    <option> Linux </option>
+</datalist>
+
+<form action="">
+    <label for="">Pesquisar pelo ID</label>
+    <input type="search" name="q" list="searchterms"
+    placeholder="Digite sua pesquisa aqui"
+    size="20">
+    aria-label="Campo de Pesquisa: Digite sua pesquisa aqui"
+
+    <button>Pesquisar</button>
+
+</form>
+-->
+
+<form action="">
+    <label for="">Pesquisar pelo ID: </label>
+    <input type="search" name="id" 
+    size="10"
+    pattern="[0-9]{2}"
+    title="Número do ID de 00 a 99">
+    <button>Pesquisar</button>
+    <!-- o pattern vai esperar por uma expressão regular, é uma estrutura de
+    texto que fará a busca por semelhança, no exemplo acima são números de
+    0 a 9 que se repetem 2 vezes -->
+
+</form>
+

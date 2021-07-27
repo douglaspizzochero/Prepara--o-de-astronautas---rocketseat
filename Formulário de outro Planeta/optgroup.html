@@ -1,0 +1,20 @@
+<!-- O optiongroup sempre funcionará dentro de um select
+     pois ele fará um agrupamento dos options dentro do select
+     Tudo que for optgroup ficará em negrito por conta do atributo label
+-->
+<label for="">Please choose one or more pets:
+    <br>
+    <select name="pets" id="" multiple size="6">
+        <optgroup label="4-legged pets">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="albatroz">Albatroz</option>
+        </optgroup>
+    </select>
+</label>
+<!-- back-end vai receber: pets=dog, cat, hamster -->
